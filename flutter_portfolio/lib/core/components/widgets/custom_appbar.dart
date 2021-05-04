@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'custom_sizedbox.dart';
-import 'appBar/custom_capa.dart';
+import 'appBar/custom_image_profile.dart';
 import 'appBar/Custom_nameText.dart';
 
 class CustomAppBar extends PreferredSize {

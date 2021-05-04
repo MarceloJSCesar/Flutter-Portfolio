@@ -11,6 +11,11 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(),
+      body: Container(
+        child: Column(
+          children: <Widget>[],
+        ),
+      ),
     );
   }
 }
