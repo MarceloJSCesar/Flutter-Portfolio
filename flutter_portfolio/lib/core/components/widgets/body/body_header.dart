@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:flutter_portfolio/core/components/app/app_text_style.dart';
 import '../custom_sizedbox.dart';
 import '../../../services/open_link_service.dart';
+import '../../../components/app/app_text_style.dart';
 
 class BodyHeader extends StatelessWidget {
   @override
@@ -21,7 +21,7 @@ class BodyHeader extends StatelessWidget {
         ),
         Text(
           'Cyber Security Enginner && Flutter Developer',
-          style: TextStyle(color: Colors.grey, fontSize: 18),
+          style: AppTextStyle.bodyHeaderDescriptionTextStyle,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,

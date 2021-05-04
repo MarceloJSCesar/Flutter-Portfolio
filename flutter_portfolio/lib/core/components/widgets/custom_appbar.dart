@@ -2,8 +2,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'custom_sizedbox.dart';
+import 'appBar/Custom_name_text.dart';
 import 'appBar/custom_image_profile.dart';
-import 'appBar/Custom_nameText.dart';
+import '../../components/app/app_image_path.dart';
 
 class CustomAppBar extends PreferredSize {
   CustomAppBar()
@@ -16,7 +17,7 @@ class CustomAppBar extends PreferredSize {
                   decoration: BoxDecoration(
                     color: Colors.black,
                     image: DecorationImage(
-                      image: AssetImage('assets/capa.png'),
+                      image: AssetImage(AppImagePath.capaPhoto),
                     ),
                   ),
                 ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../components/app/app_image_path.dart';
 
 class CustomImageProfile extends StatelessWidget {
   @override
@@ -14,7 +15,7 @@ class CustomImageProfile extends StatelessWidget {
             radius: 100,
             child: ClipOval(
               child: Image(
-                image: AssetImage('assets/profile_photo.jpg'),
+                image: AssetImage(AppImagePath.profilePhoto),
               ),
             ),
           ),
