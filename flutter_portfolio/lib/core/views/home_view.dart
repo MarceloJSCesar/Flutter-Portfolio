@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../components/widgets/body/body_header.dart';
 import '../components/widgets/custom_appbar.dart';
 
 class HomeView extends StatefulWidget {
@@ -11,9 +12,13 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CustomAppBar(),
-      body: Container(
-        child: Column(
-          children: <Widget>[],
+      body: SingleChildScrollView(
+        child: Container(
+          child: Column(
+            children: <Widget>[
+              BodyHeader(),
+            ],
+          ),
         ),
       ),
     );
