@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'custom_sizedbox.dart';
+import '../app_sizedbox.dart';
 import 'appBar/Custom_name_text.dart';
 import 'appBar/custom_image_profile.dart';
 import '../../components/app/app_image_path.dart';
@@ -24,7 +24,7 @@ class CustomAppBar extends PreferredSize {
                 Container(
                   child: Column(
                     children: <Widget>[
-                      CustomSizedBox(
+                      AppSizedBox(
                         height: 40,
                       ),
                       CustomNameText(),

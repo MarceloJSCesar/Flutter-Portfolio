@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '../components/widgets/body/body_header.dart';
 import '../components/widgets/custom_appbar.dart';
+import '../components/widgets/body/body_header.dart';
+import '../components/widgets/body/body_section.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -17,6 +18,7 @@ class _HomeViewState extends State<HomeView> {
           child: Column(
             children: <Widget>[
               BodyHeader(),
+              BodySection(),
             ],
           ),
         ),
