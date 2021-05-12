@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import '../../app_sizedbox.dart';
 import '../../../components/app/app_text_style.dart';
-import '../body/widgets/custom_body_title_widget.dart';
+// import '../body/widgets/custom_body_title_widget.dart';
 
 class BodySection extends StatelessWidget {
   @override
