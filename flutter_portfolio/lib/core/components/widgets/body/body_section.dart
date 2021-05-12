@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:flutter_portfolio/core/components/app/app_text_style.dart';
 import '../../app_sizedbox.dart';
+import '../../../components/app/app_text_style.dart';
 import '../body/widgets/custom_body_title_widget.dart';
 
 class BodySection extends StatelessWidget {
@@ -70,13 +70,14 @@ class BodySection extends StatelessWidget {
                     text: [
                       'About me :',
                       'Nice to meet you',
-                      'About me',
                     ],
                     speed: Duration(milliseconds: 200),
                     pause: Duration(seconds: 3),
                     textStyle: AppTextStyle.bodyTitleTextStyle,
                     textAlign: TextAlign.start,
                     alignment: Alignment.centerLeft,
+                    isRepeatingAnimation: false,
+                    repeatForever: true,
                   ),
                   Container(
                     padding: const EdgeInsets.only(left: 20, top: 15),

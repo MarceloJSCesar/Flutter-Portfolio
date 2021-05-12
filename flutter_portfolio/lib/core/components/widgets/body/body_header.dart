@@ -7,57 +7,59 @@ import '../../../components/app/app_text_style.dart';
 class BodyHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: <Widget>[
-        AppSizedBox(
-          height: 150,
-        ),
-        Container(
-          alignment: Alignment.center,
-          child: Text(
-            'Marcelo Cesar',
-            style: AppTextStyle.nameAppBarTextStyle,
+    return Container(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          AppSizedBox(
+            height: 150,
           ),
-        ),
-        Text(
-          'Cyber Security Enginner && Flutter Developer',
-          style: AppTextStyle.bodyHeaderDescriptionTextStyle,
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            IconButton(
-              hoverColor: Colors.transparent,
-              icon: Icon(FontAwesomeIcons.github),
-              onPressed: () => OpenLinkService.openLink(
-                'https://github.com/MarceloJSCesar',
-              ),
+          Container(
+            alignment: Alignment.center,
+            child: Text(
+              'Marcelo Cesar',
+              style: AppTextStyle.nameAppBarTextStyle,
             ),
-            IconButton(
-              hoverColor: Colors.transparent,
-              icon: Icon(FontAwesomeIcons.linkedin),
-              onPressed: () => OpenLinkService.openLink(
-                'https://www.linkedin.com/in/marcelo-c%C3%A9sar-8355161b6/',
+          ),
+          Text(
+            'Cyber Security Enginner && Flutter Developer',
+            style: AppTextStyle.bodyHeaderDescriptionTextStyle,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              IconButton(
+                hoverColor: Colors.transparent,
+                icon: Icon(FontAwesomeIcons.github),
+                onPressed: () => OpenLinkService.openLink(
+                  'https://github.com/MarceloJSCesar',
+                ),
               ),
-            ),
-            IconButton(
-              hoverColor: Colors.transparent,
-              icon: Icon(FontAwesomeIcons.youtube),
-              onPressed: () => OpenLinkService.openLink(
-                'https://www.youtube.com/channel/UC1Zy4P76ajkKBu5PNzr2Frw',
+              IconButton(
+                hoverColor: Colors.transparent,
+                icon: Icon(FontAwesomeIcons.linkedin),
+                onPressed: () => OpenLinkService.openLink(
+                  'https://www.linkedin.com/in/marcelo-c%C3%A9sar-8355161b6/',
+                ),
               ),
-            ),
-            IconButton(
-              hoverColor: Colors.transparent,
-              icon: Icon(FontAwesomeIcons.instagram),
-              onPressed: () => OpenLinkService.openLink(
-                'https://www.instagram.com/d__jordan_/',
+              IconButton(
+                hoverColor: Colors.transparent,
+                icon: Icon(FontAwesomeIcons.youtube),
+                onPressed: () => OpenLinkService.openLink(
+                  'https://www.youtube.com/channel/UC1Zy4P76ajkKBu5PNzr2Frw',
+                ),
               ),
-            ),
-          ],
-        ),
-      ],
+              IconButton(
+                hoverColor: Colors.transparent,
+                icon: Icon(FontAwesomeIcons.instagram),
+                onPressed: () => OpenLinkService.openLink(
+                  'https://www.instagram.com/d__jordan_/',
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
